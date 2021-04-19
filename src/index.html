@@ -13,7 +13,50 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">Header Section</header>
+      <header class="header">
+        <img src="./assets/images/logo.png" alt="Logo Icon" class="logo" />
+
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search Content"
+          />
+
+          <button class="search__button" type="submit">
+            <svg class="search__icon">
+              <use
+                xlink:href="./assets/images/sprites.svg#icon-magnifying-glass"
+              ></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="./assets/images/sprites.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="./assets/images/sprites.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">13</span>
+          </div>
+
+          <div class="user-nav__user">
+            <img
+              src="./assets/images/user.jpg"
+              alt="User image"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Jonas</span>
+          </div>
+        </nav>
+      </header>
       <div class="content">
         <nav class="sidebar">Content Side Bar</nav>
         <main class="hotel-view">Hotel View</main>
