@@ -1,0 +1,79 @@
+.sidebar {
+  flex: 0 0 18%;
+  background-color: var(--color-grey-dark-1);
+
+  //Delete after test
+  height: 80rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-nav {
+  list-style: none;
+  margin-top: 3.5rem;
+  font-size: 1.4rem;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 100%;
+      width: 3.5px;
+      background-color: var(--color-primary);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scaleY(0);
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1),
+        background-color 0.2s;
+      z-index: 1;
+    }
+
+    &:active::before {
+      background-color: var(--color-primary-light);
+    }
+  }
+
+  &__item:hover::before,
+  &__item--active::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+
+  &__link:active,
+  &__link:visited,
+  &__link {
+    padding: 1.5rem 3rem;
+
+    color: var(--color-grey-light-1);
+    text-decoration: none;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 1.5rem;
+    fill: currentColor;
+  }
+}
+
+.legal {
+  font-size: 1.2rem;
+  color: var(--color-grey-light-3);
+  padding: 2.5rem;
+  text-align: center;
+}
