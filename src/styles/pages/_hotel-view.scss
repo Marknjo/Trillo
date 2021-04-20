@@ -1,11 +1,33 @@
 .container {
-  background-color: var(--color-grey-light-1);
+  background-color: #fff;
   max-width: 120rem;
-  min-height: 50rem;
   margin: 8rem auto;
   box-shadow: var(--shadow-x);
 }
 
 .content {
   display: flex;
+}
+
+//Details section general layout
+.details {
+  display: flex;
+  background-color: var(--color-grey-light-2);
+  padding: 4.5rem;
+
+  justify-content: space-between;
+  border-bottom: var(--line);
+}
+
+.description {
+  background-color: #fff;
+  margin-right: 4.5rem;
+  padding: 3rem;
+  flex: 0 0 60%;
+  box-shadow: var(--shadow-details);
+}
+
+.user-reviews {
+  background-color: paleturquoise;
+  flex: 1;
 }

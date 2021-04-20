@@ -17,5 +17,9 @@
   --default-font-size: 1.6rem;
 
   //Shadows
-  --shadow-x: 0 4rem 6rem rgba(0, 0, 0, 0.2);
+  --shadow-x: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+  --shadow-details: 0 2rem 5rem rgba(0, 0, 0, 0.6);
+
+  //Borders
+  --line: 1px solid var(--color-grey-light-3);
 }
