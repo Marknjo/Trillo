@@ -8,6 +8,11 @@
   display: flex;
   flex-flow: wrap;
 
+  @include respond(large) {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+
   &__item {
     flex: 0 0 50%;
 

@@ -4,6 +4,11 @@
   padding: 3rem;
   flex: 0 0 60%;
   box-shadow: var(--shadow-details);
+
+  @include respond(large) {
+    padding: 2rem;
+    margin-right: 2.5rem;
+  }
 }
 
 .recommend {
