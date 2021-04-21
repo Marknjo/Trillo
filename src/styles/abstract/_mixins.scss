@@ -1,0 +1,43 @@
+/*
+* 
+* Media Query Generator
+* x-large - 1200px - 75em
+* large   - 1100px - 68.75em
+* medium  - 900px  - 56.25em
+* small   - 600px  - 37.5em
+* m-small - 500px  - 31.25em
+*
+*
+*/
+
+@mixin respond($screen-size) {
+  @if ($screen-size == x-large) {
+    @media only screen and (max-width: $media-x-large) {
+      @content;
+    }
+  }
+
+  @if ($screen-size == large) {
+    @media only screen and (max-width: $media-large) {
+      @content;
+    }
+  }
+
+  @if ($screen-size == medium) {
+    @media only screen and (max-width: $media-medium) {
+      @content;
+    }
+  }
+
+  @if ($screen-size == small) {
+    @media only screen and (max-width: $media-small) {
+      @content;
+    }
+  }
+
+  @if ($screen-size == m-small) {
+    @media only screen and (max-width: $media-m-small) {
+      @content;
+    }
+  }
+}
