@@ -28,6 +28,10 @@
   @include respond(large) {
     padding: 3rem;
   }
+
+  @include respond(medium) {
+    flex-direction: column;
+  }
 }
 
 .user-reviews {
@@ -36,4 +40,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include respond(medium) {
+    align-items: stretch;
+  }
 }

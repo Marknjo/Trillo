@@ -9,6 +9,10 @@
   @include respond(large) {
     margin-bottom: 2.5rem;
     padding: 2rem;
+
+    &:last-of-type {
+      margin-bottom: 3.5rem;
+    }
   }
 
   &__text {

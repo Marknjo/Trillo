@@ -9,6 +9,11 @@
     font-size: 2.25rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+
+    @include respond(medium) {
+      font-size: 1.8rem;
+      padding: 1rem 1.5rem;
+    }
   }
 
   &__stars {
@@ -21,6 +26,11 @@
     fill: var(--color-primary);
     width: 1.75rem;
     height: 1.75rem;
+
+    @include respond(medium) {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
   }
 
   &__icon-star {
@@ -56,17 +66,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include respond(medium) {
+      padding: 0 1.5rem;
+      margin-left: 2rem;
+    }
   }
 
   &__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px;
+
+    @include respond(medium) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: 400;
+
+    @include respond(medium) {
+      font-size: 0.6rem;
+    }
   }
 }

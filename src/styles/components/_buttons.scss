@@ -40,6 +40,12 @@
     border-radius: 100px;
   }
 
+  @include respond(medium) {
+    &-reviews {
+      align-self: center;
+    }
+  }
+
   &-switching-text {
     @extend %btn-placeholder;
     color: var(--color-grey-light-1);
