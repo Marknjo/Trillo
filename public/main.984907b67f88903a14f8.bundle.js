@@ -1,1 +1,0 @@
-(()=>{var o={179:()=>{console.log("utils")},578:()=>{}},e={};function r(t){var s=e[t];if(void 0!==s)return s.exports;var n=e[t]={exports:{}};return o[t](n,n.exports,r),n.exports}(()=>{"use strict";r(179);console.log("App");r(578);console.log("App in the index page")})()})();
