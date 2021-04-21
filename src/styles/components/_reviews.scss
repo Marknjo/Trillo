@@ -15,6 +15,13 @@
     }
   }
 
+  @include respond(x-small) {
+    box-shadow: none;
+    &:last-of-type {
+      margin-bottom: 2rem;
+    }
+  }
+
   &__text {
     margin-bottom: 2rem;
     position: relative;

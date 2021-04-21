@@ -3,6 +3,10 @@
   align-items: center;
   border-bottom: var(--line);
 
+  @include respond(x-small) {
+    flex-flow: wrap;
+  }
+
   &__title {
     padding: 1.5rem 3rem;
     font-weight: 300;
@@ -13,12 +17,21 @@
     @include respond(medium) {
       font-size: 1.8rem;
       padding: 1rem 1.5rem;
+      text-align: center;
+    }
+
+    @include respond(x-small) {
+      order: 1;
+      flex: 0 0 100%;
     }
   }
 
   &__stars {
     margin-right: auto;
     display: flex;
+    @include respond(x-small) {
+      padding-left: 2rem;
+    }
   }
 
   &__icon-star,

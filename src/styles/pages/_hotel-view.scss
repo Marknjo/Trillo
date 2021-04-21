@@ -36,6 +36,14 @@
   @include respond(medium) {
     flex-direction: column;
   }
+
+  @include respond(small) {
+    padding: 2rem;
+  }
+
+  @include respond(x-small) {
+    padding: 2rem 0;
+  }
 }
 
 .user-reviews {

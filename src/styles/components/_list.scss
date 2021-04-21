@@ -8,6 +8,10 @@
   display: flex;
   flex-flow: wrap;
 
+  @include respond(x-small) {
+    flex-direction: column;
+  }
+
   @include respond(large) {
     margin: 2rem 0;
     padding: 2rem 0;
