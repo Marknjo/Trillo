@@ -40,4 +40,10 @@
       @content;
     }
   }
+
+  @if ($screen-size == x-small) {
+    @media only screen and (max-width: $media-x-small) {
+      @content;
+    }
+  }
 }

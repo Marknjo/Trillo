@@ -6,6 +6,13 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: var(--line);
+
+  @include respond(m-small) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 15rem;
+    padding: 1.5rem 0;
+  }
 }
 
 //Logo
@@ -22,10 +29,21 @@
   align-items: center;
   flex: 0 0 40%;
 
+  @include respond(m-small) {
+    order: 1;
+    flex: 0 0 100%;
+    padding: 0 1.5rem;
+    //background-color: var(--color-grey-light-3);
+  }
+
   &__input {
     width: 90%;
     margin-right: -3.25rem;
     padding: 0.7rem 2rem;
+    @include respond(m-small) {
+      margin-left: -1.25rem;
+      padding-right: 3.25rem;
+    }
     background-color: var(--color-grey-light-2);
     border-radius: 100px;
     transition: all 0.2s;
