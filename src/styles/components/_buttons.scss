@@ -69,6 +69,10 @@
 
     &__visible {
       padding: 2rem 7.5rem;
+
+      @include respond(small) {
+        padding: 1.2rem 6.25rem;
+      }
     }
 
     &__hidden {
@@ -92,6 +96,9 @@
 
     &:hover &__hidden {
       top: 0;
+      @include respond(small) {
+        top: -20%;
+      }
     }
 
     &:focus {

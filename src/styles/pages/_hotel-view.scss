@@ -13,6 +13,10 @@
 
 .content {
   display: flex;
+
+  @include respond(small) {
+    flex-direction: column;
+  }
 }
 
 //Details section general layout
