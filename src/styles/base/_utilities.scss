@@ -1,0 +1,13 @@
+/* 
+* COntent visible on max 600px screen width
+ */
+
+.v-small {
+  display: none;
+  visibility: hidden;
+
+  @include respond(small) {
+    display: block;
+    visibility: visible;
+  }
+}
