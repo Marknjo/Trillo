@@ -4,6 +4,8 @@
 
 HTML and CSS project.
 
+Play with the final project static pages **[HERE](https://marknjo.github.io/Trillo/)** hosted with GitHub pages.
+
 ## :mega: Features
 
 Here are the reasons you will love this boilerplate:
